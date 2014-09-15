@@ -1,0 +1,30 @@
+/*The objective of this program is to take user input of numbers in an array and display them*/
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+  /*Let us first declare an array "a" of size lets say "20", an integer "n" which holds the length of array and an interger "i"
+  which is used for indexing(address) different array positions*/
+  
+  int a[20],n,i;
+  
+  /*Display requirement of user input*/
+  printf("Enter the size of array:");
+  
+  /*Take user input for array size in the "n" variable*/
+  scanf("%d",&n);
+  
+  /*Run for loop by traversing in steps, the index "i" from 0th element to the (n-1)th element*/ 
+  for(i=0;i<n;i++)
+    /*Take user input for values for every array position in the variable at each step a[i] with "i" ranging from 0 to (n-1)*/
+    scanf("%d",&a[i]);
+  
+  /*Again run for loop by traversing in steps, the index "i" from 0th element to the (n-1)th element*/ 
+  for(i=0;i<n;i++)
+    /*Print array values a[i] for every i ranging from 0 to (n-1)*/ 
+    printf("%d",a[i]);
+    
+    getch();//Make the output stay constantly on the display unless user interferes.
+}
